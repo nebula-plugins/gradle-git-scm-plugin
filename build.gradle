@@ -18,8 +18,6 @@ buildscript {
     dependencies { classpath 'com.netflix.nebula:nebula-plugin-plugin:1.9.11' }
 }
 
-repositories { mavenLocal() }
-
 description 'A git implementation of the gradle-scm-plugin'
 apply plugin: 'nebula-plugin'
 apply plugin: 'nebula-sign'

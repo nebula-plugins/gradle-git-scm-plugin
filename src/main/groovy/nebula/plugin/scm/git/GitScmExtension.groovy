@@ -16,5 +16,9 @@
 package nebula.plugin.scm.git
 
 class GitScmExtension {
+    GitScmExtension(String rootDirectory) {
+        this.rootDirectory = rootDirectory
+    }
+    
     String rootDirectory
 }

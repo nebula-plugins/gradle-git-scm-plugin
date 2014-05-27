@@ -15,13 +15,13 @@
  */
 package nebula.plugin.scm.git.providers
 
-import nebula.plugin.scm.providers.ScmActions
+import nebula.plugin.scm.providers.ScmProvider
 import org.ajoberstar.grgit.Grgit
 import org.ajoberstar.grgit.operation.ResetOp
 import org.gradle.api.logging.Logger
 import org.gradle.api.logging.Logging
 
-class GitProvider extends ScmActions {
+class GitProvider extends ScmProvider {
     private static Logger logger = Logging.getLogger(GitProvider)
     Grgit repo
 

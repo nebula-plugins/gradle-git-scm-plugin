@@ -27,8 +27,8 @@ class GitScmPlugin implements Plugin<Project> {
         project.plugins.apply(ScmPlugin)
         def extension = project.rootProject.extensions.findByName(EXTENSION_NAME)
         if (!extension) {
-            extension = project.rootProject.extensions.create(EXTENSION_NAME, GitScmExtension)
-            project.rootProject.scmProvider.createMethod = { new GitProvider(extension.getRootDirectory()) }
+            extension = project.rootProject.extensions.create(EXTENSION_NAME, GitScmExtension, project.rootProject.projectDir.path)
+            project.rootProject.scmFactory.createMethod = { new GitProvider(extension.getRootDirectory()) }
         }
     }
 }
