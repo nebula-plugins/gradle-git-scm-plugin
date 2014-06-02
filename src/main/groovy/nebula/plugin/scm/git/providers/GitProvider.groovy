@@ -78,7 +78,7 @@ class GitProvider extends ScmProvider {
             logger.info(successMessage)
         } catch(ex) {
             logger.info(ex.message)
-            logger.debug(ex)
+            logger.debug(ex.message)
             false
         }
         true    
