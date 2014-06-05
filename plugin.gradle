@@ -15,7 +15,7 @@
  */
 buildscript {
     repositories { jcenter() }
-    dependencies { classpath 'com.netflix.nebula:nebula-plugin-plugin:1.11.+' }
+    dependencies { classpath 'com.netflix.nebula:nebula-plugin-plugin:1.12.+' }
 }
 
 description 'A git implementation of the gradle-scm-plugin'
@@ -23,9 +23,9 @@ apply plugin: 'nebula-plugin'
 apply plugin: 'gradle-dependency-lock'
 
 dependencies {
-    compile 'com.netflix.nebula:gradle-scm-plugin:1.11.+'
+    compile 'com.netflix.nebula:gradle-scm-plugin:1.12.+'
     compile 'org.ajoberstar:grgit:0.+'
-    testCompile 'com.netflix.nebula:nebula-test:1.11.+'
+    testCompile 'com.netflix.nebula:nebula-test:1.12.+'
 }
 
 contacts {
