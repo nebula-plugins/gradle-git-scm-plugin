@@ -23,9 +23,11 @@ apply plugin: 'nebula-plugin'
 apply plugin: 'gradle-dependency-lock'
 
 dependencies {
-    compile 'com.netflix.nebula:gradle-scm-plugin:1.12.+'
+    compile 'com.netflix.nebula:gradle-scm-plugin:2.0.+'
     compile 'org.ajoberstar:grgit:0.+'
-    testCompile 'com.netflix.nebula:nebula-test:1.12.+'
+    testCompile('com.netflix.nebula:nebula-test:2.0.+') {
+        exclude group: 'org.codehaus.groovy'
+    }
 }
 
 contacts {
