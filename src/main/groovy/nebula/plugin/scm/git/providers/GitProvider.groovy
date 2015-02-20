@@ -77,8 +77,7 @@ class GitProvider extends ScmProvider {
             command()
             logger.info(successMessage)
         } catch(ex) {
-            logger.info(ex.message)
-            logger.debug(ex.message)
+            logger.error("Error running grgit command: {}", ex.message, ex)
             false
         }
         true    
