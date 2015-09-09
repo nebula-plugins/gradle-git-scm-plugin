@@ -22,7 +22,7 @@ import org.ajoberstar.grgit.Grgit
 import org.ajoberstar.grgit.operation.ResetOp
 
 class GitScmPluginSpec extends PluginProjectSpec {
-    String pluginName = 'gradle-git-scm'
+    String pluginName = 'nebula.gradle-git-scm'
 
     def 'scmFactory returns GitProvider'() {
         Grgit.init(dir: projectDir)
