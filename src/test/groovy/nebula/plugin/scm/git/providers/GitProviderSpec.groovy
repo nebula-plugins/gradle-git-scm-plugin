@@ -110,5 +110,15 @@ class GitProviderSpec extends Specification {
 
         then:
         success   
-    }    
+    }
+
+    def 'commands that throw exceptions return false'() {
+        def provider = new GitProvider(projectDir.absolutePath)
+
+        when:
+        Boolean success = provider.grgitCommand('should fail', { throw new RuntimeException() } )
+
+        then:
+        ! success
+    }
 }

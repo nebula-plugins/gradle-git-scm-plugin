@@ -76,11 +76,11 @@ class GitProvider extends ScmProvider {
         try {
             command()
             logger.info(successMessage)
+            true
         } catch(ex) {
             logger.info(ex.message)
             logger.debug(ex.message)
             false
         }
-        true    
     }
 }
