@@ -15,13 +15,15 @@
  */
 package nebula.plugin.scm.git.providers
 
-import com.energizedwork.spock.extensions.TempDirectory
 import org.ajoberstar.grgit.Grgit
 import org.ajoberstar.grgit.operation.ResetOp
+import org.junit.Rule
+import org.junit.rules.TemporaryFolder
 import spock.lang.Specification
 
 class GitProviderSpec extends Specification {
-    @TempDirectory(clean = true) File testDir
+    @Rule
+    TemporaryFolder testDir
     File projectDir
     File gitDir
     Grgit git
@@ -42,7 +44,7 @@ class GitProviderSpec extends Specification {
 
     def 'switch branches'() {
         def provider = new GitProvider(projectDir.absolutePath)
-        
+
         when:
         Boolean success = provider.switchToBranch('test')
 
@@ -54,14 +56,14 @@ class GitProviderSpec extends Specification {
         def provider = new GitProvider(projectDir.absolutePath)
         def bFile = new File(projectDir, 'b.txt')
         bFile.text = 'b'
-        
+
         when:
-        Boolean success = provider.commit('commit b.txt','b.txt')
+        Boolean success = provider.commit('commit b.txt', 'b.txt')
         git.reset(commit: 'HEAD', mode: ResetOp.Mode.HARD)
 
         then:
         success
-        new File(gitDir, 'b.txt').text == 'b'    
+        new File(gitDir, 'b.txt').text == 'b'
     }
 
     def 'pull from repository'() {
@@ -109,6 +111,6 @@ class GitProviderSpec extends Specification {
         Boolean success = provider.preChanges('a.txt', 'b.txt')
 
         then:
-        success   
-    }    
+        success
+    }
 }
