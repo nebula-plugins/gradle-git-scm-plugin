@@ -23,7 +23,8 @@ import spock.lang.Specification
 
 class GitProviderSpec extends Specification {
     @Rule
-    TemporaryFolder testDir
+    TemporaryFolder temporaryFolder
+    File testDir = temporaryFolder.getRoot()
     File projectDir
     File gitDir
     Grgit git
