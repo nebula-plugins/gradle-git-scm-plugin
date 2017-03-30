@@ -24,12 +24,12 @@ import spock.lang.Specification
 class GitProviderSpec extends Specification {
     @Rule
     TemporaryFolder temporaryFolder
-    File testDir = temporaryFolder.getRoot()
     File projectDir
     File gitDir
     Grgit git
 
     def setup() {
+        def testDir = temporaryFolder.root
         projectDir = new File(testDir, 'project')
         projectDir.mkdirs()
         gitDir = new File(testDir, 'git')
