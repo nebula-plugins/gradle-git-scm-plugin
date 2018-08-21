@@ -5,8 +5,8 @@
             "requested": "2.2.+"
         },
         "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+            "locked": "2.3.0",
+            "requested": "2.+"
         }
     },
     "compileClasspath": {
@@ -15,8 +15,8 @@
             "requested": "2.2.+"
         },
         "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+            "locked": "2.3.0",
+            "requested": "2.+"
         }
     },
     "default": {
@@ -25,8 +25,8 @@
             "requested": "2.2.+"
         },
         "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+            "locked": "2.3.0",
+            "requested": "2.+"
         }
     },
     "integTestCompile": {
@@ -35,12 +35,12 @@
             "requested": "2.2.+"
         },
         "com.netflix.nebula:nebula-test": {
-            "locked": "6.4.0",
+            "locked": "6.7.1",
             "requested": "6.+"
         },
         "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+            "locked": "2.3.0",
+            "requested": "2.+"
         }
     },
     "integTestCompileClasspath": {
@@ -49,12 +49,12 @@
             "requested": "2.2.+"
         },
         "com.netflix.nebula:nebula-test": {
-            "locked": "6.4.0",
+            "locked": "6.7.1",
             "requested": "6.+"
         },
         "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+            "locked": "2.3.0",
+            "requested": "2.+"
         }
     },
     "integTestRuntime": {
@@ -63,12 +63,12 @@
             "requested": "2.2.+"
         },
         "com.netflix.nebula:nebula-test": {
-            "locked": "6.4.0",
+            "locked": "6.7.1",
             "requested": "6.+"
         },
         "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+            "locked": "2.3.0",
+            "requested": "2.+"
         }
     },
     "integTestRuntimeClasspath": {
@@ -77,12 +77,12 @@
             "requested": "2.2.+"
         },
         "com.netflix.nebula:nebula-test": {
-            "locked": "6.4.0",
+            "locked": "6.7.1",
             "requested": "6.+"
         },
         "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+            "locked": "2.3.0",
+            "requested": "2.+"
         }
     },
     "jacocoAgent": {
@@ -101,8 +101,8 @@
             "requested": "2.2.+"
         },
         "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+            "locked": "2.3.0",
+            "requested": "2.+"
         }
     },
     "runtimeClasspath": {
@@ -111,8 +111,8 @@
             "requested": "2.2.+"
         },
         "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+            "locked": "2.3.0",
+            "requested": "2.+"
         }
     },
     "testCompile": {
@@ -121,12 +121,12 @@
             "requested": "2.2.+"
         },
         "com.netflix.nebula:nebula-test": {
-            "locked": "6.4.0",
+            "locked": "6.7.1",
             "requested": "6.+"
         },
         "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+            "locked": "2.3.0",
+            "requested": "2.+"
         }
     },
     "testCompileClasspath": {
@@ -135,12 +135,12 @@
             "requested": "2.2.+"
         },
         "com.netflix.nebula:nebula-test": {
-            "locked": "6.4.0",
+            "locked": "6.7.1",
             "requested": "6.+"
         },
         "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+            "locked": "2.3.0",
+            "requested": "2.+"
         }
     },
     "testRuntime": {
@@ -149,12 +149,12 @@
             "requested": "2.2.+"
         },
         "com.netflix.nebula:nebula-test": {
-            "locked": "6.4.0",
+            "locked": "6.7.1",
             "requested": "6.+"
         },
         "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+            "locked": "2.3.0",
+            "requested": "2.+"
         }
     },
     "testRuntimeClasspath": {
@@ -163,12 +163,12 @@
             "requested": "2.2.+"
         },
         "com.netflix.nebula:nebula-test": {
-            "locked": "6.4.0",
+            "locked": "6.7.1",
             "requested": "6.+"
         },
         "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+            "locked": "2.3.0",
+            "requested": "2.+"
         }
     }
 }

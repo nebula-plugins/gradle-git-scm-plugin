@@ -30,7 +30,7 @@ contacts {
 
 dependencies {
     compile 'com.netflix.nebula:gradle-scm-plugin:2.2.+'
-    compile 'org.ajoberstar:grgit:0.+'
+    compile 'org.ajoberstar:grgit:2.+'
 }
 
 pluginBundle {
