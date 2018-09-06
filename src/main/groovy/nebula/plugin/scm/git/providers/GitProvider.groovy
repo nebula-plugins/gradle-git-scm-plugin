@@ -17,6 +17,7 @@ package nebula.plugin.scm.git.providers
 
 import nebula.plugin.scm.providers.ScmProvider
 import org.ajoberstar.grgit.Grgit
+import org.ajoberstar.grgit.operation.OpenOp
 import org.ajoberstar.grgit.operation.ResetOp
 import org.gradle.api.logging.Logger
 import org.gradle.api.logging.Logging
@@ -26,7 +27,10 @@ class GitProvider extends ScmProvider {
     Grgit repo
 
     GitProvider(String rootDirectory) {
-        repo = Grgit.open(rootDirectory)
+        repo = new OpenOp().with {
+            it.currentDir = rootDirectory
+            it.call()
+        }
     }
 
     @Override
