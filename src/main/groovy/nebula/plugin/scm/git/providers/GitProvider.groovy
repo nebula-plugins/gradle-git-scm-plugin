@@ -26,7 +26,7 @@ class GitProvider extends ScmProvider {
     Grgit repo
 
     GitProvider(String rootDirectory) {
-        repo = Grgit.open(rootDirectory)
+        repo = Grgit.open(dir: rootDirectory)
     }
 
     @Override

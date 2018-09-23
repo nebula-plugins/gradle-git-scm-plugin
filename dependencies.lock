@@ -1,88 +1,88 @@
 {
     "compile": {
         "com.netflix.nebula:gradle-scm-plugin": {
-            "locked": "2.2.0",
-            "requested": "2.2.+"
+            "locked": "4.1.0",
+            "requested": "latest.release"
         },
-        "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+        "org.ajoberstar.grgit:grgit-gradle": {
+            "locked": "3.0.0-beta.1",
+            "requested": "3.0.0-beta.1"
         }
     },
     "compileClasspath": {
         "com.netflix.nebula:gradle-scm-plugin": {
-            "locked": "2.2.0",
-            "requested": "2.2.+"
+            "locked": "4.1.0",
+            "requested": "latest.release"
         },
-        "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+        "org.ajoberstar.grgit:grgit-gradle": {
+            "locked": "3.0.0-beta.1",
+            "requested": "3.0.0-beta.1"
         }
     },
     "default": {
         "com.netflix.nebula:gradle-scm-plugin": {
-            "locked": "2.2.0",
-            "requested": "2.2.+"
+            "locked": "4.1.0",
+            "requested": "latest.release"
         },
-        "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+        "org.ajoberstar.grgit:grgit-gradle": {
+            "locked": "3.0.0-beta.1",
+            "requested": "3.0.0-beta.1"
         }
     },
     "integTestCompile": {
         "com.netflix.nebula:gradle-scm-plugin": {
-            "locked": "2.2.0",
-            "requested": "2.2.+"
+            "locked": "4.1.0",
+            "requested": "latest.release"
         },
         "com.netflix.nebula:nebula-test": {
-            "locked": "6.7.1",
-            "requested": "6.+"
+            "locked": "7.1.0",
+            "requested": "latest.release"
         },
-        "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+        "org.ajoberstar.grgit:grgit-gradle": {
+            "locked": "3.0.0-beta.1",
+            "requested": "3.0.0-beta.1"
         }
     },
     "integTestCompileClasspath": {
         "com.netflix.nebula:gradle-scm-plugin": {
-            "locked": "2.2.0",
-            "requested": "2.2.+"
+            "locked": "4.1.0",
+            "requested": "latest.release"
         },
         "com.netflix.nebula:nebula-test": {
-            "locked": "6.7.1",
-            "requested": "6.+"
+            "locked": "7.1.0",
+            "requested": "latest.release"
         },
-        "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+        "org.ajoberstar.grgit:grgit-gradle": {
+            "locked": "3.0.0-beta.1",
+            "requested": "3.0.0-beta.1"
         }
     },
     "integTestRuntime": {
         "com.netflix.nebula:gradle-scm-plugin": {
-            "locked": "2.2.0",
-            "requested": "2.2.+"
+            "locked": "4.1.0",
+            "requested": "latest.release"
         },
         "com.netflix.nebula:nebula-test": {
-            "locked": "6.7.1",
-            "requested": "6.+"
+            "locked": "7.1.0",
+            "requested": "latest.release"
         },
-        "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+        "org.ajoberstar.grgit:grgit-gradle": {
+            "locked": "3.0.0-beta.1",
+            "requested": "3.0.0-beta.1"
         }
     },
     "integTestRuntimeClasspath": {
         "com.netflix.nebula:gradle-scm-plugin": {
-            "locked": "2.2.0",
-            "requested": "2.2.+"
+            "locked": "4.1.0",
+            "requested": "latest.release"
         },
         "com.netflix.nebula:nebula-test": {
-            "locked": "6.7.1",
-            "requested": "6.+"
+            "locked": "7.1.0",
+            "requested": "latest.release"
         },
-        "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+        "org.ajoberstar.grgit:grgit-gradle": {
+            "locked": "3.0.0-beta.1",
+            "requested": "3.0.0-beta.1"
         }
     },
     "jacocoAgent": {
@@ -97,78 +97,78 @@
     },
     "runtime": {
         "com.netflix.nebula:gradle-scm-plugin": {
-            "locked": "2.2.0",
-            "requested": "2.2.+"
+            "locked": "4.1.0",
+            "requested": "latest.release"
         },
-        "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+        "org.ajoberstar.grgit:grgit-gradle": {
+            "locked": "3.0.0-beta.1",
+            "requested": "3.0.0-beta.1"
         }
     },
     "runtimeClasspath": {
         "com.netflix.nebula:gradle-scm-plugin": {
-            "locked": "2.2.0",
-            "requested": "2.2.+"
+            "locked": "4.1.0",
+            "requested": "latest.release"
         },
-        "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+        "org.ajoberstar.grgit:grgit-gradle": {
+            "locked": "3.0.0-beta.1",
+            "requested": "3.0.0-beta.1"
         }
     },
     "testCompile": {
         "com.netflix.nebula:gradle-scm-plugin": {
-            "locked": "2.2.0",
-            "requested": "2.2.+"
+            "locked": "4.1.0",
+            "requested": "latest.release"
         },
         "com.netflix.nebula:nebula-test": {
-            "locked": "6.7.1",
-            "requested": "6.+"
+            "locked": "7.1.0",
+            "requested": "latest.release"
         },
-        "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+        "org.ajoberstar.grgit:grgit-gradle": {
+            "locked": "3.0.0-beta.1",
+            "requested": "3.0.0-beta.1"
         }
     },
     "testCompileClasspath": {
         "com.netflix.nebula:gradle-scm-plugin": {
-            "locked": "2.2.0",
-            "requested": "2.2.+"
+            "locked": "4.1.0",
+            "requested": "latest.release"
         },
         "com.netflix.nebula:nebula-test": {
-            "locked": "6.7.1",
-            "requested": "6.+"
+            "locked": "7.1.0",
+            "requested": "latest.release"
         },
-        "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+        "org.ajoberstar.grgit:grgit-gradle": {
+            "locked": "3.0.0-beta.1",
+            "requested": "3.0.0-beta.1"
         }
     },
     "testRuntime": {
         "com.netflix.nebula:gradle-scm-plugin": {
-            "locked": "2.2.0",
-            "requested": "2.2.+"
+            "locked": "4.1.0",
+            "requested": "latest.release"
         },
         "com.netflix.nebula:nebula-test": {
-            "locked": "6.7.1",
-            "requested": "6.+"
+            "locked": "7.1.0",
+            "requested": "latest.release"
         },
-        "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+        "org.ajoberstar.grgit:grgit-gradle": {
+            "locked": "3.0.0-beta.1",
+            "requested": "3.0.0-beta.1"
         }
     },
     "testRuntimeClasspath": {
         "com.netflix.nebula:gradle-scm-plugin": {
-            "locked": "2.2.0",
-            "requested": "2.2.+"
+            "locked": "4.1.0",
+            "requested": "latest.release"
         },
         "com.netflix.nebula:nebula-test": {
-            "locked": "6.7.1",
-            "requested": "6.+"
+            "locked": "7.1.0",
+            "requested": "latest.release"
         },
-        "org.ajoberstar:grgit": {
-            "locked": "0.4.1",
-            "requested": "0.+"
+        "org.ajoberstar.grgit:grgit-gradle": {
+            "locked": "3.0.0-beta.1",
+            "requested": "3.0.0-beta.1"
         }
     }
 }
