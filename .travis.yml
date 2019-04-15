@@ -9,9 +9,6 @@ cache:
   directories:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
-before_install:
-- test $TRAVIS_PULL_REQUEST = false && openssl aes-256-cbc -K $encrypted_81bc982a63a3_key -iv $encrypted_81bc982a63a3_iv
-  -in gradle.properties.enc -out gradle.properties -d || true
 after_success:
 - "./gradlew jacocoTestReport coveralls"
 notifications:
@@ -21,3 +18,11 @@ notifications:
     on_success: change
     on_failure: always
     on_start: never
+env:
+  global:
+  - secure: T84NUUSO0uVjC1q5fJgPiJx56VV6MGfqC/H/AI5+hsmicvWr81nd2sLRPR8ykNH6CaMD6zFRIY95cb9Ith2YBfyWtj2pFy9OU7QpFNsrVxAs+daqr8MLwKJqHSfGm7lIifMvI4zFgHwGLee2DTbT9+SkPOFW5JTRGt5Z1oN1kJU=
+  - secure: QhKvhvRe2QVTM26D92O+DwipwlfsTRie08WmaE+HlN/GkMYdpmpkUNBDskjyUCnagWxP+P833nz4GKZZQ+CbLuptapfCBfO7QCWwGDof7xsd1SIFHzMRBrDA0Go4PxdcndzKkiN+m6drwSs2WbLOyhEB2Ey3bUJTjuonIl80VdI=
+  - secure: TD7FVrVYnoSv419GdbpPWzWBotMzqqoAfM5Gdk4rGIBc02Cqx5//OqS7tMwZb4LzOru+H6iA6pbTUnHZC8ClJkDBrNG44652vBTdTStxYGqwddcC8C7REw93NfJokmGmcg67F8FwhDtBL+TzXVGdX0DyhQuHqGGdCa7STN+0wo8=
+  - secure: Qfq9kPvrfuTqvqlO8BfzZwaFnvMBs+rN7SBh8WzzQCUUb0gzxlZ9lG3rGxto9d9v7iGx8nWUaRoCKFJkdBu9t+A6Z79h0baIzmlfQoe9XNaY2x5nvdyBWtSydwuWfuvuPP/l9Z0BPaGIwXOgGL//Qt+mZ0KJ7LEkkSxxPk1hxIc=
+  - secure: cResdSiX1KJBU81d2/RqgNx5fMJI9WoG3zJ/NLygR0cq6X+DrQ2e59s5ZZ7ZvGeeWgNvlkZEqODxoclz6qFtOYNpgm8DsFTI6xUgSrTEFBCg8VmgrFBozW6TLrWybzYf/2O5Lnl0Qj5RxXFCTJ+2HW1iRRZVqTCbj9d008YRVBA=
+  - secure: BL5af2oW7DwfpeH1MJG1hriKwOy5h6QDSW+xYgtEM2hP1EGF+CJfqTdNtV+t9xC3C5USPzvI23a1npZqRdeps7lVVWLwqYyGknsS5ZwDcxqBuxyDcPjDELXeKBRnApYX/b1NlgPwkd9+EvRy7Y7wKF7n6BWitKHKTBVNdKChGJI=
