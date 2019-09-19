@@ -15,6 +15,7 @@
  */
 package nebula.plugin.scm.git
 
+import groovy.transform.CompileDynamic
 import nebula.plugin.scm.ScmPlugin
 import nebula.plugin.scm.git.providers.GitProvider
 import org.gradle.api.Plugin
@@ -25,10 +26,15 @@ class GitScmPlugin implements Plugin<Project> {
     @Override
     void apply(Project project) {
         project.plugins.apply(ScmPlugin)
-        def extension = project.rootProject.extensions.findByName(EXTENSION_NAME)
+        GitScmExtension extension = project.rootProject.extensions.findByName(EXTENSION_NAME) as GitScmExtension
         if (!extension) {
             extension = project.rootProject.extensions.create(EXTENSION_NAME, GitScmExtension, project.rootProject.projectDir.path)
-            project.rootProject.scmFactory.createMethod = { new GitProvider(extension.getRootDirectory()) }
+            createScmFactoryMethod(project, extension)
         }
+    }
+
+    @CompileDynamic
+    private void createScmFactoryMethod(Project project, GitScmExtension extension) {
+        project.rootProject.scmFactory.createMethod = { new GitProvider(extension.getRootDirectory()) }
     }
 }

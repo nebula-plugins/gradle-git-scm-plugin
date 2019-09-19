@@ -26,13 +26,13 @@ class GitProvider extends ScmProvider {
     Grgit repo
 
     GitProvider(String rootDirectory) {
-        repo = Grgit.open(dir: rootDirectory)
+        repo = Grgit.open([dir: rootDirectory] as Map<String, Object>)
     }
 
     @Override
     Boolean switchToBranch(String branch) {
         grgitCommand("Switched to branch: ${branch}") {
-            repo.checkout(branch: branch, createBranch: true)
+            repo.checkout([branch: branch, createBranch: true] as Map<String, Object>)
         }
     }
 
@@ -46,8 +46,8 @@ class GitProvider extends ScmProvider {
     @Override
     Boolean commit(String message, List<String> files) {
         grgitCommand("Committed ${files}") {
-            repo.add(patterns: files)
-            repo.commit(message: message)
+            repo.add([patterns: files] as Map<String, Object>)
+            repo.commit([message: message] as Map<String, Object>)
             repo.push()
         }
     }
@@ -55,8 +55,8 @@ class GitProvider extends ScmProvider {
     @Override
     Boolean tag(String tagname, String message = null) {
         grgitCommand("Created tag: ${tagname}") {
-            repo.tag.add(name: tagname, message: message ?: "Creating ${tagname}", annotate: true)
-            repo.push(tags: true)
+            repo.tag.add([name: tagname, message: message ?: "Creating ${tagname}", annotate: true] as Map<String, Object>)
+            repo.push([tags: true] as Map<String, Object>)
         }
     }
 
@@ -68,7 +68,7 @@ class GitProvider extends ScmProvider {
     @Override
     Boolean undoChanges() {
         grgitCommand('Reset(hard) to head of current branch') {
-            repo.reset(commit: 'HEAD', mode: ResetOp.Mode.HARD)
+            repo.reset([commit: 'HEAD', mode: ResetOp.Mode.HARD] as Map<String, Object>)
         }
     }
 
