@@ -35,11 +35,11 @@ contacts {
 }
 
 dependencies {
-    compile 'com.netflix.nebula:gradle-scm-plugin:latest.release'
-    compile ('org.ajoberstar.grgit:grgit-core:3.0.0-beta.1') {
+    implementation 'com.netflix.nebula:gradle-scm-plugin:latest.release'
+    implementation ('org.ajoberstar.grgit:grgit-core:3.0.0-beta.1') {
         exclude group: 'org.codehaus.groovy', module: 'groovy'
     }
-    testCompile('com.netflix.nebula:nebula-test:latest.release') {
+    testImplementation('com.netflix.nebula:nebula-test:latest.release') {
         exclude group: 'org.codehaus.groovy'
     }
 }
