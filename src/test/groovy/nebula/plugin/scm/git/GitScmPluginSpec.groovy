@@ -47,7 +47,7 @@ class GitScmPluginSpec extends PluginProjectSpec {
         git.commit(message: 'Initial commit')
 
         def subDir = new File(projectDir, 'sub')
-        Grgit.clone(dir: subDir, uri: "file://${gitDir.absolutePath}").close()        
+        Grgit.clone(dir: subDir, uri: "file://${gitDir.absolutePath}").close()
 
         project.apply plugin: pluginName
         project.gitScm {
@@ -63,9 +63,7 @@ class GitScmPluginSpec extends PluginProjectSpec {
 
         then:
         success
-        new File(gitDir, 'nonroot.txt').text == '''\
-            test
-            addition
-        '''.stripIndent()
+        new File(gitDir, 'nonroot.txt').text.contains('test\n')
+        new File(gitDir, 'nonroot.txt').text.contains('addition\n')
     }
 }
