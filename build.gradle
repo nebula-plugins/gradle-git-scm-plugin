@@ -16,7 +16,7 @@
 
 
 plugins {
-    id 'nebula.plugin-plugin' version '16.3.0'
+    id 'nebula.plugin-plugin' version '17.0.0'
 }
 
 description 'A git implementation of the gradle-scm-plugin'
@@ -41,12 +41,17 @@ dependencies {
 }
 
 pluginBundle {
+    tags = ['nebula', 'scm', 'git']
+
+}
+
+gradlePlugin {
     plugins {
         gitScm {
             id = 'nebula.gradle-git-scm'
             displayName = 'Git SCM plugin'
             description = project.description
-            tags = ['nebula', 'scm', 'git']
+            implementationClass = 'nebula.plugin.scm.git.GitScmPlugin'
         }
     }
 }
