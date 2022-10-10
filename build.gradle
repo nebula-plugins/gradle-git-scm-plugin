@@ -48,7 +48,7 @@ pluginBundle {
 gradlePlugin {
     plugins {
         gitScm {
-            id = 'nebula.gradle-git-scm'
+            id = 'com.netflix.nebula.gradle-git-scm'
             displayName = 'Git SCM plugin'
             description = project.description
             implementationClass = 'nebula.plugin.scm.git.GitScmPlugin'
