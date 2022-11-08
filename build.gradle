@@ -16,7 +16,7 @@
 
 
 plugins {
-    id 'com.netflix.nebula.plugin-plugin' version '19.0.1'
+    id 'com.netflix.nebula.plugin-plugin' version '19.0.2'
 }
 
 description 'A git implementation of the gradle-scm-plugin'
@@ -32,7 +32,7 @@ contacts {
 
 dependencies {
     implementation 'com.netflix.nebula:gradle-scm-plugin:latest.release'
-    implementation ('org.ajoberstar.grgit:grgit-core:3.0.0-beta.1') {
+    implementation ('org.ajoberstar.grgit:grgit-core:4.1.1') {
         exclude group: 'org.codehaus.groovy', module: 'groovy'
     }
     testImplementation('com.netflix.nebula:nebula-test:latest.release') {
