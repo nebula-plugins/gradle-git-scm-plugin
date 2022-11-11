@@ -16,7 +16,7 @@
 
 
 plugins {
-    id 'com.netflix.nebula.plugin-plugin' version '19.0.2'
+    id 'com.netflix.nebula.plugin-plugin' version '20.0.0'
 }
 
 description 'A git implementation of the gradle-scm-plugin'
@@ -40,10 +40,6 @@ dependencies {
     }
 }
 
-pluginBundle {
-    tags = ['nebula', 'scm', 'git']
-
-}
 
 gradlePlugin {
     plugins {
@@ -52,6 +48,7 @@ gradlePlugin {
             displayName = 'Git SCM plugin'
             description = project.description
             implementationClass = 'nebula.plugin.scm.git.GitScmPlugin'
+            tags.set(['nebula', 'scm', 'git'])
         }
     }
 }
